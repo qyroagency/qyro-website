@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Qyro | من صفحة إلى براند</title>
+<meta name="description" content="Qyro (كايرو): نحوّل صفحتك على انستجرام إلى براند ومتجر إلكتروني، ونصمم إعلانات وفيديوهات ريلز.">
+<meta name="theme-color" content="#0B1524">
+<meta property="og:title" content="Qyro | من صفحة إلى براند">
+<meta property="og:description" content="هوية ومتجر وتصاميم إعلانات وفيديوهات ريلز. اختار خدماتك وابعت طلبك على واتساب.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' x='15' font-size='90' fill='%23FF8A2A'>Q</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B1524;--sf:rgba(255,255,255,.035);--ink:#EEF1F5;--mut:#8C98AA;--ac:#FF8A2A;--ach:#FF9D4D;--ln:rgba(255,255,255,.09);--ar:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;--lt:'Sora','IBM Plex Sans Arabic',sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:var(--ar);line-height:1.8;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lock{overflow:hidden}
+h1,h2,h3{font-weight:700;line-height:1.35}
+.wrap{max-width:1040px;margin:auto;padding:0 20px;position:relative;z-index:2}
+.grad{color:var(--ac)}
+/* intro */
+#intro{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:opacity .7s,visibility .7s}
+#intro.gone{opacity:0;visibility:hidden}
+.il{width:92px;height:92px;animation:pop .8s cubic-bezier(.2,1.3,.3,1) .9s both}
+@keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.1)}100%{transform:scale(1)}}
+.rg{stroke-dasharray:188.5;stroke-dashoffset:188.5;transform-origin:46px 46px;transform:rotate(-90deg);animation:dr .8s cubic-bezier(.65,0,.25,1) .1s forwards}
+.tl{stroke-dasharray:46;stroke-dashoffset:46;animation:dr .4s ease-out .6s forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.iwm{display:flex;direction:ltr;font:700 40px var(--lt);letter-spacing:-1px;margin-top:10px}
+.iwm span{display:inline-block;opacity:0;transform:translateY(22px);animation:up .6s cubic-bezier(.2,.9,.2,1) both}
+.iwm span:nth-child(1){animation-delay:1.1s}.iwm span:nth-child(2){animation-delay:1.18s}.iwm span:nth-child(3){animation-delay:1.26s}.iwm span:nth-child(4){animation-delay:1.34s;color:var(--ac)}
+@keyframes up{to{opacity:1;transform:none}}
+.iwl{margin-top:10px;font-size:14px;color:var(--mut);opacity:0;animation:up .6s ease-out 1.7s both}
+/* bg */
+.bl{position:fixed;border-radius:50%;filter:blur(110px);z-index:0;pointer-events:none}
+.b1{width:480px;height:480px;background:#FF8A2A;top:-220px;right:-140px;opacity:.13}
+.b2{width:420px;height:420px;background:#3b5a86;bottom:-200px;left:-120px;opacity:.2}
+/* nav */
+nav{position:sticky;top:12px;z-index:20;margin:12px auto 0;max-width:1000px;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;border:1px solid var(--ln);border-radius:14px;background:rgba(11,21,36,.8);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.lgo{display:flex;align-items:center;gap:8px;direction:ltr;font:700 22px var(--lt);letter-spacing:-.5px}.lgo svg{width:28px;height:28px}
+.nl{display:flex;gap:26px;font-weight:500;font-size:15px}.nl a{color:var(--mut);text-decoration:none;transition:.2s}.nl a:hover{color:var(--ink)}
+@media(max-width:800px){.nl{display:none}}
+.btn{display:inline-block;background:var(--ac);color:#0B1524;border:1px solid var(--ac);border-radius:10px;padding:11px 26px;font:700 15px var(--ar);cursor:pointer;text-decoration:none;transition:.2s}
+.btn:hover{background:var(--ach);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--ln)}.btn.o:hover{border-color:var(--ink);background:transparent}
+/* hero */
+.hero{text-align:center;padding:70px 0 34px}
+.pill{display:inline-block;border:1px solid var(--ln);background:var(--sf);border-radius:30px;padding:4px 16px;font-size:13px;color:var(--mut);margin-bottom:22px}
+.hero h1{font-size:clamp(34px,7.5vw,66px);letter-spacing:-1px}
+.rot{display:inline-block;min-width:3.2em}.rot span{display:inline-block;animation:wi .6s cubic-bezier(.2,.8,.2,1)}
+@keyframes wi{from{opacity:0;transform:translateY(30px);filter:blur(6px)}}
+.hero p{color:var(--mut);max-width:560px;margin:18px auto 30px;font-size:18px}
+.mq{overflow:hidden;border-block:1px solid var(--ln);padding:12px 0;margin:34px 0;direction:ltr;mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 15%,#000 85%,transparent)}
+.mq div{display:flex;gap:36px;width:max-content;animation:mq 26s linear infinite;font:500 16px var(--ar);color:var(--mut)}.mq b{color:var(--ac);font-weight:400}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:56px 0}
+.sh{text-align:center;margin-bottom:30px}.sh h2{font-size:clamp(26px,5vw,38px)}.sh p{color:var(--mut)}
+.g{display:grid;gap:16px}.g3{grid-template-columns:repeat(auto-fit,minmax(215px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.c{background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:24px;transition:border-color .3s,transform .3s}
+.c:hover{border-color:rgba(255,138,42,.45)}.c h3{font-size:19px;margin-bottom:2px}.c p{color:var(--mut);font-size:15px}
+.ic{width:30px;height:30px;stroke:var(--ac);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px;display:block}
+.n{width:38px;height:38px;border-radius:10px;border:1px solid rgba(255,138,42,.5);color:var(--ac);display:grid;place-items:center;font:600 16px var(--lt);margin-bottom:12px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+/* showcase */
+.dev{position:relative;max-width:780px;margin:0 auto 30px}
+.lap{background:#142036;border-radius:16px 16px 8px 8px;padding:10px;border:1px solid var(--ln);box-shadow:0 40px 90px #0009}
+.bar2{display:flex;align-items:center;gap:6px;padding:2px 6px 8px;direction:ltr}.bar2 i{width:9px;height:9px;border-radius:50%;background:#3a475c}
+.url{flex:1;background:#0B1524;border-radius:6px;padding:2px 14px;font:12px var(--lt);color:var(--mut);text-align:center;margin:0 10px}
+.scr{position:relative;aspect-ratio:16/10;overflow:hidden;border-radius:6px;background:#222}
+.sl{position:absolute;inset:0;opacity:0;transform:scale(1.1);filter:blur(8px);transition:all 1s cubic-bezier(.2,.8,.2,1);pointer-events:none;display:flex;flex-direction:column}
+.sl.on{opacity:1;transform:none;filter:none}.sl.out{opacity:0;transform:translateY(-6%) scale(.95);filter:blur(6px)}
+.sn{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;font-weight:700;font-size:14px}
+.sn span:last-child{display:flex;gap:6px}.sn i{width:28px;height:5px;border-radius:3px;background:currentColor;opacity:.35}
+.sh1{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:0 8%;gap:6px}
+.sh1 b{font-weight:700;font-size:clamp(18px,4vw,34px);line-height:1.3}.sh1 em{font-style:normal;font-size:clamp(11px,1.8vw,15px);opacity:.8}
+.sh1 u{text-decoration:none;color:#fff;border-radius:6px;padding:3px 16px;font-size:clamp(11px,1.8vw,14px);font-weight:600;margin-top:6px}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:12px 20px 16px}
+.sg div{border-radius:8px;padding:34px 8px 6px;font-size:clamp(9px,1.5vw,12px);font-weight:600;text-align:center;background:var(--pc);color:#fff;text-shadow:0 1px 4px #0006}
+.sg small{display:block;font-weight:400;opacity:.9}
+.wipe{position:absolute;inset:0;background:linear-gradient(100deg,transparent 35%,rgba(255,138,42,.7) 50%,transparent 65%);transform:translateX(120%);pointer-events:none}
+.wipe.go{animation:wp .9s cubic-bezier(.6,0,.3,1)}
+@keyframes wp{to{transform:translateX(-120%)}}
+.tagd{position:absolute;top:-14px;right:20px;z-index:3;background:var(--bg);border:1px solid var(--ln);color:var(--mut);font-size:12px;font-weight:500;padding:2px 14px;border-radius:20px}
+.ph{position:absolute;left:-26px;bottom:-34px;width:128px;aspect-ratio:9/18.5;border-radius:22px;border:5px solid #142036;overflow:hidden;box-shadow:0 30px 60px #000b;background:#222;z-index:3}
+.ph .sh1{padding:0 12px;gap:2px}.ph .sh1 b{font-size:16px}.ph .sg{grid-template-columns:1fr 1fr;padding:8px;gap:6px}.ph .sg div{padding:20px 4px 4px;font-size:9px}
+.ph .sn{padding:6px 10px;font-size:10px}
+@media(max-width:700px){.ph{width:92px;left:-6px;bottom:-26px;border-width:4px;border-radius:16px}}
+.cap{text-align:center;margin-top:44px;color:var(--mut);font-size:14px}.cap b{color:var(--ink);font-size:18px;display:block}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:12px}.dots button{width:34px;height:4px;border-radius:2px;border:0;background:var(--ln);cursor:pointer;position:relative;overflow:hidden}
+.dots button.on:after{content:"";position:absolute;inset:0;background:var(--ac);transform-origin:right;animation:pg 3.8s linear forwards}
+@keyframes pg{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.quote{text-align:center;font-weight:700;font-size:clamp(22px,4vw,32px);margin-top:34px}
+.st{text-align:center}.st .lz{font:700 46px var(--lt)}.st p{color:var(--mut);font-size:15px}
+/* ba */
+.ba{position:relative;height:300px;border-radius:16px;overflow:hidden;border:1px solid var(--ln);direction:ltr;--p:50%;user-select:none;max-width:520px;margin:auto}
+.ba .l{position:absolute;inset:0;display:grid;place-items:center}.ba .pr{width:110px;height:170px;border-radius:30px 30px 18px 18px}
+.ba .l span{position:absolute;top:14px;font:600 13px var(--ar);padding:3px 14px;border-radius:20px;background:#0008}
+.bb{background:#3a3a3d}.bb .pr{background:#6b6b6e;filter:blur(1.5px) grayscale(1)}.bb span{left:14px}
+.aa{background:radial-gradient(circle at 50% 40%,#2c4468,#13213a 70%);clip-path:inset(0 0 0 var(--p))}
+.aa .pr{background:linear-gradient(135deg,#fff,#ffd9a8 50%,#ff9a3c);box-shadow:0 30px 50px #0006}.aa span{right:14px;background:var(--ac);color:#0B1524}
+.ba i{position:absolute;top:0;bottom:0;left:var(--p);width:2px;background:#fff}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+/* services */
+.cur{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
+.cur button{background:transparent;color:var(--ink);border:1px solid var(--ln);border-radius:8px;padding:6px 20px;font:600 14px var(--ar);cursor:pointer;transition:.2s}
+.cur button.on{background:var(--ink);color:#0B1524;border-color:var(--ink)}.cur .chip:hover{border-color:var(--ac)}
+.sv{display:flex;gap:14px;align-items:flex-start;cursor:pointer;padding:18px 20px}
+.sv.on{border-color:var(--ac);background:rgba(255,138,42,.07)}
+.sv .tx{flex:1}.sv b{display:block;font-size:16px;font-weight:600}.sv small{color:var(--mut);display:block;line-height:1.6}
+.sv .pc{font:700 20px var(--lt);white-space:nowrap}.sv .pc small{display:inline;font:500 12px var(--ar)}
+.chk{width:24px;height:24px;border-radius:7px;border:1.5px solid var(--ln);flex:none;display:grid;place-items:center;transition:.2s;margin-top:2px}
+.chk svg{width:14px;height:14px;stroke:#0B1524;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.on>.chk{background:var(--ac);border-color:var(--ac)}
+.form{margin-top:22px;border-radius:18px;padding:28px;background:var(--sf);border:1px solid var(--ln)}
+.fl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:20px}
+.fl label{display:block;font-weight:600;font-size:14px;margin-bottom:4px}
+.fl input{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--ln);border-radius:10px;padding:12px 16px;font:500 16px var(--ar);outline:0;transition:.2s}
+.fl input:focus{border-color:var(--ac)}.fl input.bad{border-color:#ff6b5f;animation:sk .4s}
+@keyframes sk{25%{transform:translateX(6px)}75%{transform:translateX(-6px)}}
+.tot{text-align:center}.tot .lz{font:700 44px var(--lt);color:var(--ac)}.tot p{color:var(--mut);font-size:14px;margin-bottom:14px}.tot #hint{color:var(--ac);min-height:26px;font-weight:600}
+.ct{text-align:center}.ct .row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}.pr2{color:var(--mut);font-size:14px;margin-top:10px}
+details{background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:14px 20px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}details p{color:var(--mut);margin-top:8px}
+.fab{position:fixed;left:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 24px #0006}
+.fab svg{width:28px;height:28px;fill:#fff}
+footer{text-align:center;color:var(--mut);padding:36px 0;font-size:14px;position:relative;z-index:2}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="lock">
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+<symbol id="i-brush" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4A4.6 4.6 0 0 0 22 11c0-5-4.5-9-10-9z"/><circle cx="7.5" cy="11.5" r="1"/><circle cx="12" cy="7.5" r="1"/><circle cx="16.5" cy="11.5" r="1"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v8h14v-8"/></symbol>
+<symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></symbol>
+<symbol id="i-ads" viewBox="0 0 24 24"><path d="M3 11v2a1 1 0 0 0 1 1h3l8 5V5L7 10H4a1 1 0 0 0-1 1z"/><path d="M19 9a4 4 0 0 1 0 6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 8.5l6 3.5-6 3.5z"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.7-4 3-9 3s-9-1.3-9-3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></symbol>
+<symbol id="i-film" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h5M2 17h5M17 17h5M17 7h5"/></symbol>
+<symbol id="i-ok" viewBox="0 0 24 24"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="M22 4L12 14l-3-3"/></symbol>
+</svg>
+
+<div id="intro">
+<svg class="il" viewBox="0 0 100 100"><circle class="rg" cx="46" cy="46" r="30" fill="none" stroke="#FF8A2A" stroke-width="13"/><path class="tl" d="M52 52 L84 84" stroke="#FFC371" stroke-width="13" stroke-linecap="round" fill="none"/></svg>
+<div class="iwm"><span>Q</span><span>y</span><span>r</span><span>o</span></div>
+<div class="iwl">أهلاً بيك</div>
+</div>
+
+<div class="bl b1"></div><div class="bl b2"></div>
+
+<nav><div class="lgo"><svg viewBox="0 0 100 100"><circle cx="46" cy="46" r="30" fill="none" stroke="#FF8A2A" stroke-width="13"/><path d="M52 52 L84 84" stroke="#FFC371" stroke-width="13" stroke-linecap="round"/></svg><span>Qyro</span></div>
+<div class="nl"><a href="#showcase">شغلنا</a><a href="#offer">خدماتنا</a><a href="#why">ليه متجر؟</a><a href="#ai">الذكاء الاصطناعي</a><a href="#services">الأسعار</a><a href="#faq">أسئلة</a></div>
+<a class="btn" href="#services">اختار خدماتك</a></nav>
+
+<div class="wrap">
+<div class="hero">
+<div class="pill rv">Qyro (كايرو) · للمشاريع الناشئة والصفحات اللي بتبيع أونلاين</div>
+<h1 class="rv" style="--d:.1s">أهلاً بيك في Qyro<br>صفحتك تستاهل <span class="rot grad" id="rot"><span>براند</span></span></h1>
+<p class="rv" style="--d:.2s">مش بنسلّمك تصميم وبس. بنبني لك هوية ومتجر جاهز للبيع، ونصمم إعلانات وفيديوهات ريلز تعرّف الناس بيك.</p>
+<div class="rv" style="--d:.3s"><a class="btn" href="#showcase">شوف شغلنا</a> <a class="btn o" href="#services">اختار خدماتك</a></div>
+</div>
+</div>
+
+<div class="mq"><div id="mq"></div></div>
+
+<div class="wrap">
+<section id="showcase" style="padding-top:20px"><div class="sh rv"><h2>إزاي بتبقى <span class="grad">متاجرنا؟</span></h2><p>نماذج توضيحية لأسلوب المتاجر اللي بنبنيها</p></div>
+<div class="dev rv"><span class="tagd">نماذج توضيحية</span>
+<div class="lap"><div class="bar2"><i></i><i></i><i></i><div class="url" id="url">yourstore.com</div></div><div class="scr" id="scr"><div class="wipe" id="wipe"></div></div></div>
+<div class="ph"><div id="phs" style="position:absolute;inset:0"></div></div></div>
+<div class="cap"><b id="cn">متجر عبايات</b><span id="cd"></span><div class="dots" id="dots"></div></div>
+</section>
+
+<section id="offer"><div class="sh rv"><h2>إيه اللي <span class="grad">بنقدمه؟</span></h2><p>كل اللي صفحتك محتاجاه عشان تبقى براند، في مكان واحد</p></div>
+<div class="g g3">
+<div class="c rv"><svg class="ic"><use href="#i-brush"/></svg><h3>هوية بصرية</h3><p>شعار وألوان وخطوط تعبّر عن مشروعك.</p></div>
+<div class="c rv" style="--d:.08s"><svg class="ic"><use href="#i-store"/></svg><h3>متجر إلكتروني</h3><p>متجر كامل برفع المنتجات والأوصاف.</p></div>
+<div class="c rv" style="--d:.16s"><svg class="ic"><use href="#i-img"/></svg><h3>تحسين صور المنتجات</h3><p>خلفيات نضيفة وإضاءة أحسن.</p></div>
+<div class="c rv" style="--d:.24s"><svg class="ic"><use href="#i-ads"/></svg><h3>تصاميم إعلانات</h3><p>تصاميم إعلانية للسوشيال والحملات الممولة.</p></div>
+<div class="c rv" style="--d:.32s"><svg class="ic"><use href="#i-play"/></svg><h3>فيديوهات ريلز</h3><p>ريلز بمونتاج وفويس أوفر وهويتك.</p></div>
+<div class="c rv" style="--d:.4s"><svg class="ic"><use href="#i-grid"/></svg><h3>محتوى سوشيال</h3><p>بوستات وستوري بشكل موحّد.</p></div>
+</div></section>
+
+<section id="why"><div class="sh rv"><h2>ليه لازم يبقى عندك <span class="grad">متجر؟</span></h2><p>الصفحة بتعرّف الناس بيك، والمتجر هو اللي بيبيع.</p></div>
+<div class="g g3">
+<div class="c rv"><svg class="ic"><use href="#i-cart"/></svg><h3>الطلب بيبقى سهل</h3><p>العميل يختار ويطلب بنفسه، من غير ما يستنى حد يرد على رسالته.</p></div>
+<div class="c rv" style="--d:.1s"><svg class="ic"><use href="#i-shield"/></svg><h3>ثقة أكبر</h3><p>متجر بهوية واضحة وصور نضيفة بيخلي الناس تطمن وتشتري.</p></div>
+<div class="c rv" style="--d:.2s"><svg class="ic"><use href="#i-db"/></svg><h3>عملاؤك وبياناتك ملكك</h3><p>الطلبات والعملاء عندك، مش معتمد على منصة واحدة وخوارزميتها.</p></div>
+<div class="c rv" style="--d:.3s"><svg class="ic"><use href="#i-clock"/></svg><h3>بيشتغل 24 ساعة</h3><p>يستقبل طلبات وإنت نايم، وتقدر تربط إعلانات وتقيس نتيجتها.</p></div>
+</div></section>
+
+<section id="ai"><div class="sh rv"><h2>بنستخدم <span class="grad">الذكاء الاصطناعي</span> في شغلنا</h2><p>عشان نسلّمك أسرع وبسعر أحسن، والجودة والقرار عند فريقنا.</p></div>
+<div class="g g3">
+<div class="c rv"><svg class="ic"><use href="#i-pen"/></svg><h3>أوصاف ومحتوى</h3><p>مسودات سريعة للأوصاف والإعلانات، وبنراجعها ونعدّلها بإيدينا.</p></div>
+<div class="c rv" style="--d:.1s"><svg class="ic"><use href="#i-img"/></svg><h3>تحسين الصور</h3><p>خلفيات نضيفة وإضاءة أحسن، من غير ما نغيّر شكل منتجك الحقيقي.</p></div>
+<div class="c rv" style="--d:.2s"><svg class="ic"><use href="#i-film"/></svg><h3>إعلانات وريلز</h3><p>مسودات تصميم ومونتاج وفويس أوفر نخلّصها بسرعة وبهويتك.</p></div>
+<div class="c rv" style="--d:.3s"><svg class="ic"><use href="#i-ok"/></svg><h3>مراجعة بشرية</h3><p>أي حاجة بتتسلّم ليك اتراجعت من فريق بشري الأول.</p></div>
+</div></section>
+
+<section class="g g3" style="padding:10px 0 30px">
+<div class="st rv"><div class="lz grad"><span data-n="7">0</span>+</div><p>أيام للتنفيذ</p></div>
+<div class="st rv" style="--d:.1s"><div class="lz grad"><span data-n="4">0</span></div><p>خطوات واضحة</p></div>
+<div class="st rv" style="--d:.2s"><div class="lz grad"><span data-n="2">0</span></div><p>جولات تعديل</p></div>
+<div class="st rv" style="--d:.3s"><div class="lz grad"><span data-n="100">0</span>%</div><p>الحسابات باسمك</p></div>
+</section>
+
+<section id="how"><div class="sh rv"><h2>إزاي <span class="grad">بنشتغل؟</span></h2></div>
+<div class="g g3">
+<div class="c rv"><div class="n">1</div><h3>ندرس صفحتك</h3><p>نفهم منتجاتك وجمهورك.</p></div>
+<div class="c rv" style="--d:.1s"><div class="n">2</div><h3>نصمم هويتك</h3><p>تختار وتعدّل جولتين.</p></div>
+<div class="c rv" style="--d:.2s"><div class="n">3</div><h3>نبني ونصمم</h3><p>المتجر والمنتجات والإعلانات والريلز.</p></div>
+<div class="c rv" style="--d:.3s"><div class="n">4</div><h3>نسلّم</h3><p>كل حاجة جاهزة وباسمك.</p></div>
+</div></section>
+
+<section id="ba"><div class="sh rv"><h2>اسحب وشوف <span class="grad">الفرق</span></h2><p>مثال توضيحي لتحسين صورة المنتج</p></div>
+<div class="ba rv" id="bax"><div class="l bb"><span>قبل</span><div class="pr"></div></div><div class="l aa"><span>بعد</span><div class="pr"></div></div><i></i><input type="range" min="5" max="95" value="50" id="rg" aria-label="قارن"></div></section>
+
+<section id="services"><div class="sh rv"><h2>خدماتنا <span class="grad">وأسعارنا</span></h2><p>اختار اللي محتاجه بس، وأرسل طلبك على واتساب</p></div>
+<div class="cur" id="cur"><button data-c="SAR" class="on">ريال سعودي</button><button data-c="EGP">جنيه مصري</button></div>
+<div class="cur"><button class="chip" data-q="basic">الباقة الأساسية</button><button class="chip" data-q="adv">الباقة المتقدمة</button><button class="chip" data-q="none">مسح الاختيار</button></div>
+<div class="g g2" id="sv" style="margin-top:14px"></div>
+<div class="form">
+<div class="fl"><div><label for="pn">اسم مشروعك *</label><input id="pn" placeholder="مثال: عبايات سلمى" autocomplete="off"></div><div><label for="pl">رابط صفحتك (اختياري)</label><input id="pl" placeholder="instagram.com/..." dir="ltr" autocomplete="off"></div></div>
+<div class="tot"><div id="sl" style="color:var(--mut)">اختار خدمة أو أكتر</div><div class="lz" id="tot">—</div><p id="mo"></p><div id="hint"></div><a class="btn" id="wa" href="#" target="_blank" rel="noopener">أرسل طلبك على الواتساب</a><p style="margin-top:12px">50% مقدم عند البدء، والباقي عند التسليم · الأسعار تقديرية وتتأكد في المحادثة</p></div>
+</div></section>
+
+<section id="contact"><div class="c ct rv"><h2 style="font-size:clamp(26px,5vw,36px)">جاهز تحوّل صفحتك <span class="grad">لبراند؟</span></h2><p>ابعت لنا رابط صفحتك ونتواصل معاك.</p>
+<div class="row"><a class="btn wl" href="#" target="_blank" rel="noopener">كلمنا على واتساب</a><a class="btn o" href="https://instagram.com/qyro.agency" target="_blank" rel="noopener">@qyro.agency</a></div><div class="pr2">hello@qyro.agency</div></div></section>
+
+<section id="faq"><div class="sh rv"><h2>أسئلة <span class="grad">شائعة</span></h2></div>
+<details class="rv"><summary>المتجر والحسابات باسم مين؟</summary><p>كل حاجة باسمك أنت، ونشتغل كمديرين بصلاحيات مؤقتة لحد التسليم.</p></details>
+<details class="rv"><summary>كام مدة التنفيذ؟</summary><p>من 7 لـ 10 أيام حسب الخدمات وسرعة وصول المنتجات والصور منك.</p></details>
+<details class="rv"><summary>هل الأسعار نهائية؟</summary><p>الأسعار تقديرية، وبتتأكد في المحادثة حسب عدد المنتجات وطلباتك.</p></details>
+<details class="rv"><summary>هل بتستخدموا الذكاء الاصطناعي؟</summary><p>أيوه، في المسودات وتحسين الصور والمحتوى، وكل حاجة بتتراجع من فريقنا قبل التسليم.</p></details>
+<details class="rv"><summary>فيه تعديلات؟</summary><p>جولتين تعديل في الهوية، وأي زيادة بمقابل بسيط.</p></details>
+</section>
+</div>
+
+<a class="fab wl" href="#" target="_blank" rel="noopener" aria-label="واتساب"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.400-2c1.800 1 3.800 1.500 5.600 1.500 6.900 0 12.600-5.600 12.600-12.500C28.600 8.600 23 3 16 3zm6.200 17.600c-.3.8-1.600 1.500-2.200 1.600-.6.1-1.300.1-2.100-.1-.5-.2-1.200-.4-2-.8-3.500-1.500-5.700-5-5.900-5.200-.2-.2-1.400-1.900-1.400-3.600s.9-2.500 1.200-2.900c.3-.4.700-.4.900-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.600 1.100 2.800.1.2.1.4 0 .6-.1.2-.2.4-.4.600l-.6.700c-.2.200-.4.400-.2.800.2.400 1 1.700 2.200 2.700 1.500 1.300 2.800 1.800 3.200 2 .4.200.6.200.9-.1.200-.3 1-1.100 1.300-1.500.3-.4.500-.3.900-.2.400.2 2.300 1.100 2.700 1.300.4.200.6.300.7.500.1.200.1.900-.2 1.700z"/></svg></a>
+<footer><div class="lgo" style="justify-content:center;margin-bottom:8px"><svg viewBox="0 0 100 100"><circle cx="46" cy="46" r="30" fill="none" stroke="#FF8A2A" stroke-width="13"/><path d="M52 52 L84 84" stroke="#FFC371" stroke-width="13" stroke-linecap="round"/></svg><span>Qyro</span></div>© Qyro · كايرو · من صفحة إلى براند<br><span dir="ltr">qyro.agency</span></footer>
+
+<script>
+const PHONE='201000000000' /* غيّر الرقم هنا: بالصيغة الدولية بدون + */;
+const $=s=>document.querySelector(s),f=n=>n.toLocaleString('en-US');
+/* intro: يتخطى تلقائياً */
+let booted=false;
+function boot(){if(booted)return;booted=true;document.body.classList.remove('lock');$('#intro').classList.add('gone');
+ setTimeout(()=>{$('#intro').remove()},900);document.querySelectorAll('.rv').forEach(el=>io.observe(el));startShow();}
+$('#intro').onclick=boot;
+setTimeout(boot,matchMedia('(prefers-reduced-motion:reduce)').matches?0:2900);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+e.target.querySelectorAll('[data-n]').forEach(el=>{const to=+el.dataset.n;let s=null;(function st(t){s=s||t;const k=Math.min((t-s)/1400,1);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(st)})(performance.now())});
+io.unobserve(e.target)}}),{threshold:.15});
+const words=['براند','متجر','بيزنس','علامة'];let wi=0;
+setInterval(()=>{wi=(wi+1)%words.length;$('#rot').innerHTML=`<span>${words[wi]}</span>`},2200);
+const m=['هوية بصرية','متجر إلكتروني','تصاميم إعلانات','فيديوهات ريلز','تحسين صور','ذكاء اصطناعي'].map(x=>`<span>${x} <b>/</b></span>`).join('');
+$('#mq').innerHTML=m+m+m+m;
+/* showcase */
+const DEMO=[
+{n:'متجر عبايات',d:'أناقة هادية وصور نضيفة',url:'abaya-demo.store',bg:'linear-gradient(135deg,#f3e6d6,#d2ae8e)',tx:'#3b2a1f',ac:'#8a5a3b',t:'أناقة تلبس شخصيتك',s:'تشكيلة جديدة',pc:['#b98a68','#8a5a3b','#a67c5b','#6e4630'],it:[['عباية كلاسيك','290'],['عباية مطرزة','420'],['طقم صيفي','350'],['شال حرير','120']]},
+{n:'متجر عطور',d:'فخامة وهوية داكنة',url:'oud-demo.store',bg:'linear-gradient(135deg,#1b1230,#4a2a6b)',tx:'#f3e7c9',ac:'#d4a64a',t:'عطرك توقيعك',s:'عود ومسك وعنبر',pc:['#d4a64a','#8f6cc0','#b8862e','#5b3a85'],it:[['عود ملكي','380'],['مسك أبيض','220'],['عنبر','310'],['بخور','150']]},
+{n:'متجر قهوة مختصة',d:'دافي وحيوي لعشاق القهوة',url:'beans-demo.store',bg:'linear-gradient(135deg,#2b1d14,#6b4428)',tx:'#f6ead7',ac:'#ff8a2a',t:'قهوة محمصة طازجة',s:'من المحمصة لبيتك',pc:['#9b6a3c','#7a4e2a','#c28a4e','#4b2f1b'],it:[['إثيوبي','85'],['كولومبي','95'],['دارك','70'],['هدية','160']]}];
+const slide=(x,mob)=>`<div class="sl" style="background:${x.bg};color:${x.tx}"><div class="sn"><span>${x.n.split(' ')[1]||x.n}</span><span><i></i><i></i><i></i></span></div><div class="sh1"><em>${x.s}</em><b>${x.t}</b><u style="background:${x.ac}">تسوّق الآن</u></div><div class="sg">${x.it.slice(0,mob?2:4).map((p,i)=>`<div style="--pc:${x.pc[i]}">${p[0]}<small>${p[1]} ر.س</small></div>`).join('')}</div></div>`;
+$('#scr').insertAdjacentHTML('afterbegin',DEMO.map(x=>slide(x,0)).join(''));
+$('#phs').innerHTML=DEMO.map(x=>slide(x,1)).join('');
+$('#dots').innerHTML=DEMO.map((_,i)=>`<button data-i="${i}" aria-label="${i+1}"></button>`).join('');
+let cur=-1,tm;
+function go(i){const a=[...document.querySelectorAll('#scr .sl')],b=[...document.querySelectorAll('#phs .sl')];
+ if(cur>=0){a[cur].classList.remove('on');a[cur].classList.add('out');b[cur].classList.remove('on');b[cur].classList.add('out');const o=cur;setTimeout(()=>{a[o].classList.remove('out');b[o].classList.remove('out')},1000)}
+ cur=i;a[i].classList.add('on');b[i].classList.add('on');
+ const w=$('#wipe');w.classList.remove('go');void w.offsetWidth;w.classList.add('go');
+ $('#cn').textContent=DEMO[i].n;$('#cd').textContent=DEMO[i].d;$('#url').textContent=DEMO[i].url;
+ document.querySelectorAll('#dots button').forEach((d,k)=>{d.classList.remove('on');if(k===i){void d.offsetWidth;d.classList.add('on')}});
+ clearTimeout(tm);tm=setTimeout(()=>go((i+1)%DEMO.length),3800)}
+function startShow(){go(0)}
+$('#dots').onclick=e=>{const b=e.target.closest('button');if(b)go(+b.dataset.i)};
+/* services */
+const SV=[
+{n:'هوية بصرية',d:'شعار وألوان وخطوط وملف هوية بسيط',s:200,e:1000},
+{n:'متجر إلكتروني',d:'تأسيس المتجر كامل بتصميمك وهويتك',s:250,e:1250},
+{n:'رفع 15 منتج',d:'مع أوصاف وتصنيفات وأسعار',s:80,e:400},
+{n:'رفع 25 منتج إضافي',d:'لو عندك منتجات أكتر من 15',s:150,e:750},
+{n:'تحسين الصور بالذكاء الاصطناعي',d:'خلفيات نضيفة وإضاءة أحسن، من غير تغيير شكل المنتج',s:150,e:750},
+{n:'أوصاف احترافية مكتوبة',d:'نصوص بتبيع، بمراجعة بشرية',s:150,e:750},
+{n:'دعم وتعديلات 30 يوم',d:'بعد التسليم نظبط أي ملاحظة',s:150,e:750},
+{n:'تصاميم إعلانات',d:'5 تصاميم للسوشيال والإعلانات الممولة بهويتك',s:150,e:750},
+{n:'فيديوهات ريلز',d:'3 ريلز بمونتاج وفويس أوفر وهويتك',s:250,e:1250},
+{n:'باكج سوشيال',d:'8 تصميمات بوستات وستوري',s:150,e:750},
+{n:'دعم شهري',d:'تعديلات وتحديثات مستمرة',s:200,e:1000,mo:1}];
+const QUICK={basic:[0,1,2],adv:[0,1,2,3,4,5,6],none:[]};
+const CK='<svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>';
+let C='SAR',sel=new Set();
+const sym=()=>C==='SAR'?'ريال':'جنيه',pr=x=>C==='SAR'?x.s:x.e;
+function drawS(){$('#sv').innerHTML=SV.map((x,i)=>`<div class="c sv ${sel.has(i)?'on':''}" data-i="${i}"><div class="chk">${sel.has(i)?CK:''}</div><div class="tx"><b>${x.n}</b><small>${x.d}</small></div><div class="pc">${f(pr(x))} <small>${sym()}${x.mo?' / شهر':''}</small></div></div>`).join('');upd()}
+function msg(){const nm=$('#pn').value.trim(),lk=$('#pl').value.trim();let t=0,mo=0;const L=[];sel.forEach(i=>{L.push('- '+SV[i].n);SV[i].mo?mo+=pr(SV[i]):t+=pr(SV[i])});
+ return {nm,t,mo,txt:`السلام عليكم، أنا صاحب مشروع "${nm||'-'}" وعايز أبدأ مع Qyro.\nالخدمات المطلوبة:\n${L.join('\n')||'-'}\nالإجمالي التقريبي: ${f(t)} ${sym()}${mo?` + ${f(mo)} ${sym()} شهرياً`:''}${lk?'\nرابط صفحتي: '+lk:''}`}}
+function upd(){const r=msg();$('#sl').textContent=sel.size?[...sel].map(i=>SV[i].n).join(' + '):'اختار خدمة أو أكتر';
+ $('#tot').textContent=sel.size?(r.t?f(r.t)+' '+sym():f(r.mo)+' '+sym()+' / شهر'):'—';$('#mo').textContent=r.t&&r.mo?`+ ${f(r.mo)} ${sym()} شهرياً للدعم`:'';
+ $('#wa').href=`https://wa.me/${PHONE}?text=${encodeURIComponent(r.txt)}`}
+$('#sv').onclick=e=>{const c=e.target.closest('.sv');if(!c)return;const i=+c.dataset.i;sel.has(i)?sel.delete(i):sel.add(i);drawS()};
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{sel=new Set(QUICK[b.dataset.q]);drawS()});
+$('#cur').onclick=e=>{const b=e.target.closest('button');if(!b)return;C=b.dataset.c;document.querySelectorAll('#cur button').forEach(x=>x.classList.toggle('on',x===b));drawS()};
+['#pn','#pl'].forEach(s=>$(s).addEventListener('input',()=>{$(s).classList.remove('bad');$('#hint').textContent='';upd()}));
+$('#wa').onclick=e=>{const r=msg();let h='';
+ if(!sel.size)h='اختار خدمة واحدة على الأقل';else if(!r.nm){h='اكتب اسم مشروعك الأول';$('#pn').classList.add('bad');$('#pn').focus()}
+ if(h){e.preventDefault();$('#hint').textContent=h}};
+drawS();
+document.querySelectorAll('.wl').forEach(a=>a.href=`https://wa.me/${PHONE}?text=${encodeURIComponent('السلام عليكم، عندي صفحة وعايز أحوّلها لبراند مع Qyro')}`);
+$('#rg').addEventListener('input',e=>$('#bax').style.setProperty('--p',e.target.value+'%'));
+</script>
+</body>
+</html>
